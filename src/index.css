@@ -31,7 +31,7 @@ code {
 .navbar .links {
   margin-left: auto;
   text-align: center;
-  font-size: 2.5vh;
+  font-size: 2.3vh;
 }
 .navbar .links a{
   color: #038C8C;
@@ -50,8 +50,8 @@ code {
 }
 .navbar .logo{
   margin-left: auto;
-  height: 100px;
-  width: 100px;
+  height: 130px;
+  width: 130px;
 }
 
 /* Content */
@@ -65,8 +65,8 @@ code {
 .about-us-text{
   text-align: right;
   font-size: 38px !important;
-
 }
+
 .About-us-container p::after {
   content: "";
   display: block;
