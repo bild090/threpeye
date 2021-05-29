@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,142 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.App{
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  width: 80%;
+  max-width: 1200px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0  auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar .links {
+  margin-left: auto;
+  text-align: center;
+  font-size: 2.5vh;
+}
+.navbar .links a{
+  color: #038C8C;
+}
+.navbar .links a:hover{
+  color: #60B6BF;
+  border-bottom: #038C8C 3px solid;
+}
+.navbar a {
+  margin-right: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+.navbar .logo{
+  margin-left: auto;
+  height: 100px;
+  width: 100px;
+}
+
+/* Content */
+/* About us */
+.About-us-container{
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.about-us-text{
+  text-align: right;
+  font-size: 38px !important;
+
+}
+.About-us-container p::after {
+  content: "";
+  display: block;
+  margin: 0 80% 0;
+  width: 20%;
+  padding-top: 10px;
+  border-bottom: 2px solid #60B6BF;
+}
+.About-us-container ul{
+  font-family: Almarai!important;
+  font-size: 20px !important;
+  font-weight: 300;
+  text-align: right;
+  line-height: 35px!important;
+  list-style:none;
+  margin-right: 20%;
+}
+.About-us-container ul li::before {
+  content: "\2022";
+  color: #007994;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  float: right;
+}
+
+/* clients */
+.clients{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.clients img{
+  width: 200px;
+  height: 200px;
+  margin: 20px 20px 20px;
+  
+}
+
+/* footer */
+.footer{
+  color: #f2f2f2;
+  display:  flex;
+  flex-direction: column;
+  width: 100%;
+  height: 20vh;
+  background-color: #03717C;
+}
+#contact-text{
+  font-size: 2.5vh;
+}
+.footer img {
+  height: 25px;
+  width: 30px;
+}
+.footer a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #8DC3CF;
+  text-decoration: none;
+}
+.Communication{
+  margin: auto;
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  html{
+    width: 600px;
+  }
+  .About-us-container{
+    width: 100%;
+  }
+  .About-us-container ul{ 
+    margin-right: 10%;
+  }
+  .footer{
+    width: 610px;
+  }
+  
 }
